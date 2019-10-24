@@ -1,0 +1,73 @@
+LOCUS       FJ809784                1500 bp    mRNA    linear   PLN 08-JUN-2009
+DEFINITION  Artemisia annua aldehyde dehydrogenase 1 (aldh1) mRNA, complete
+            cds.
+ACCESSION   FJ809784
+VERSION     FJ809784.1
+KEYWORDS    .
+SOURCE      Artemisia annua (sweet wormwood)
+  ORGANISM  Artemisia annua
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliophyta; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; campanulids; Asterales; Asteraceae;
+            Asteroideae; Anthemideae; Artemisiinae; Artemisia.
+REFERENCE   1  (bases 1 to 1500)
+  AUTHORS   Teoh,K.H., Polichuk,D.R., Reed,D.W. and Covello,P.S.
+  TITLE     Molecular cloning of an aldehyde dehydrogenase implicated in
+            artemisinin biosynthesis in Artemisia annua
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1500)
+  AUTHORS   Teoh,K.H., Polichuk,D.R., Reed,D.W. and Covello,P.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-MAR-2009) Plant Biotechnology Institute, 110
+            Gymnasium Place, Saskatoon, SK S7N 0W9, Canada
+FEATURES             Location/Qualifiers
+     source          1..1500
+                     /organism="Artemisia annua"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:35608"
+     gene            1..1500
+                     /gene="aldh1"
+     CDS             1..1500
+                     /gene="aldh1"
+                     /function="oxidizes sesquiterpene and short chain
+                     aldehydes"
+                     /codon_start=1
+                     /product="aldehyde dehydrogenase 1"
+                     /protein_id="ACR61719.1"
+                     /translation="MSSGANGSSKSASHKIKFTKLFINGEFVDSISGNTFDTINPATE
+                     EVLATVAEGRKEDIDLAVKAAREAFDNGPWPRMSGEARRKIMLKFADLIDENADELTT
+                     LEVIDGGKLFGPVRHFEVPVSSDTFRYFAGAADKIRGATLKMSSNIQAYTLREPIGVV
+                     GHIIPWNGPAFMFATKVAPALAAGCTMVIKPAEHTPLTVLFLAHLSKLAGVPDGVINV
+                     VNGFGKTAGAAVSSHMDIDMVTFTGSTEVGRTVMQAAALSNLKPVSLELGGKSPLIVF
+                     DDADVDKAAEFAILGNFTNKGEMCVAGSRVFVQEGIHDVFVKKLEGAVKAWATRDPFD
+                     LATRHGPQNNKQQYDKVLSCINHGKKEGATLVTGGKPFGKKGYYIEPTLFTNVTDDMT
+                     IAKEEIFGPVISVLKFKTVEEVIKRANATKYGLASGVFTKNIDVVNTVSRSIRAGAVW
+                     VNCYLALDRDAPHGGYKMSGFGREQGLEALEHYLQIKTVATPIYDSPWL"
+ORIGIN      
+        1 atgagctcag gagctaatgg aagttctaag tcagcaagcc ataaaatcaa gttcaccaag
+       61 ctttttatca atggcgaatt tgttgattct atttcaggaa acacttttga cacgattaat
+      121 ccagcgacag aagaagtgtt agcaacagtg gccgaaggaa gaaaggaaga cattgatttg
+      181 gccgttaagg ctgcccgtga agctttcgac aatggacctt ggcctcgcat gtctggcgag
+      241 gcacgccgaa aaatcatgtt aaagttcgca gacttgatcg atgaaaatgc tgacgagtta
+      301 accaccttag aagtaatcga tggaggaaaa ttgtttggcc cagtgaggca ctttgaagtc
+      361 ccggtttcat cagatacatt tcgttacttt gcgggtgcag ccgataaaat ccgtggagca
+      421 actcttaaaa tgtcaagtaa tattcaagct tatacgctac gtgaacccat cggagtagtt
+      481 ggtcacatca ttccttggaa tggtcctgcc ttcatgttcg ctacaaaggt tgcaccagct
+      541 ttagctgctg gctgcaccat ggtcatcaag cctgccgaac atactcccct tacagttctc
+      601 tttttagctc acctgtcgaa gctggctggt gttcctgatg gcgtgattaa tgtggttaac
+      661 gggtttggaa aaactgctgg tgctgccgtt agctcgcata tggacattga catggttact
+      721 tttacgggat ccacagaagt tggccgcacc gtaatgcaag ctgcagctct aagtaatctg
+      781 aaaccagtgt cactcgaact tggaggaaaa tcgcctttga ttgttttcga tgatgcagat
+      841 gttgataaag ccgcagaatt tgctattttg ggaaatttta ctaacaaagg tgagatgtgt
+      901 gtggcagggt ctcgtgtttt cgttcaggaa gggatccatg acgtattcgt aaaaaaattg
+      961 gaaggagcgg tgaaagcgtg ggcaacaagg gacccttttg atctcgccac tcgtcatgga
+     1021 cctcagaata acaaacaaca atatgataaa gtactttcat gcatcaacca tggcaaaaag
+     1081 gaaggtgcga ctttggtaac cggtggtaag ccatttggga agaaaggata ctacattgag
+     1141 cctactctat ttacaaacgt tacggatgat atgaccatag caaaggaaga aatttttggc
+     1201 cccgttatat ctgttctcaa gttcaagact gttgaagaag tgattaaaag agcaaatgcc
+     1261 acaaaatatg gacttgcctc aggtgtattc accaaaaata ttgatgtcgt gaacacagtt
+     1321 tcgagatcta ttcgagcagg tgctgtttgg gtcaactgtt atttagcact cgaccgggat
+     1381 gcacctcatg gagggtataa aatgagtggg tttggacgag aacaaggatt agaggcactt
+     1441 gaacattatc ttcagattaa gacagtggct acacccatat atgattcccc gtggctttaa
+//
+
