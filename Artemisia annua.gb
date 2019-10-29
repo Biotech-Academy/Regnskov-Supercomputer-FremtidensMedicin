@@ -45,6 +45,24 @@ FEATURES             Location/Qualifiers
                      /db_xref="taxon:35608"
                      /tissue_type="leaf"
                      /country="China: Shanghai"
+                          gene            1..1500
+                     /gene="aldh1"
+     CDS             1..1500
+                     /gene="aldh1"
+                     /function="oxidizes sesquiterpene and short chain
+                     aldehydes"
+                     /codon_start=1
+                     /product="aldehyde dehydrogenase 1"
+                     /protein_id="ACR61719.1"
+                     /translation="MSSGANGSSKSASHKIKFTKLFINGEFVDSISGNTFDTINPATE
+                     EVLATVAEGRKEDIDLAVKAAREAFDNGPWPRMSGEARRKIMLKFADLIDENADELTT
+                     LEVIDGGKLFGPVRHFEVPVSSDTFRYFAGAADKIRGATLKMSSNIQAYTLREPIGVV
+                     GHIIPWNGPAFMFATKVAPALAAGCTMVIKPAEHTPLTVLFLAHLSKLAGVPDGVINV
+                     VNGFGKTAGAAVSSHMDIDMVTFTGSTEVGRTVMQAAALSNLKPVSLELGGKSPLIVF
+                     DDADVDKAAEFAILGNFTNKGEMCVAGSRVFVQEGIHDVFVKKLEGAVKAWATRDPFD
+                     LATRHGPQNNKQQYDKVLSCINHGKKEGATLVTGGKPFGKKGYYIEPTLFTNVTDDMT
+                     IAKEEIFGPVISVLKFKTVEEVIKRANATKYGLASGVFTKNIDVVNTVSRSIRAGAVW
+                     VNCYLALDRDAPHGGYKMSGFGREQGLEALEHYLQIKTVATPIYDSPWL"
      gene            3827..4962
                      /locus_tag="CTI12_AA000410"
      mRNA            3827..4962
@@ -427,6 +445,22 @@ FEATURES             Location/Qualifiers
                      /estimated_length=2207
                      /gap_type="within scaffold"
                      /linkage_evidence="paired-ends"
+     gene            complement(383337..384042)
+                     /gene="CYP71AV1"
+     CDS             complement(383337..384042)
+                     /gene="CYP71AV1"
+                     /codon_start=1
+                     /product="cytochrome P450 monooxygenase CYP71AV1"
+                     /protein_id="BAM68808.1"
+                     /translation="MKSILKAMALSLTTSIALATILLFVYKFATRSKSTKKSLPEPWR
+                     LPIIGHMHHLIGTTPHRGVRDLARKYGSLMHLQLGEVPTIVVSSPKWAKEILTTYDIS
+                     FANRPETLTGEIVLYHNTDVVLAPYGEYWRQLRKICTLELLSVKKVKSFQSLREEECW
+                     NLVQEIKASGSGRPVNLSENVFKLIATILSRAAFGKGIKDQKELTEIVKEILRQTGGF
+                     DVADIFPSKKFLHHLSGKRARLTSLRKKIDNLIDNLVAEHTVNTSSKTNETLLDVLLR
+                     LKDSAEFPLTSDNIKAIILDMFGAGTDTSSSTIEWAISELIKCPKAMEKVQAELRKAL
+                     NGKEKIHEEDIQELSYLNMVIKETLRLHPPLPLVLPRECRQPVNLAGYNIPNKTKLIV
+                     NVFAINRDPEYWKDAEAFIPERFENSSATVMGAEYEYLPFGAGRRMCPGAALGLANVQ
+                     LPLANILYHFNWKLPNGVSYDQIDMTESSGATMQRKTELLLVPSF"                     
      gene            complement(383337..384042)
                      /locus_tag="CTI12_AA000550"
      mRNA            complement(join(383337..383588,383995..384042))
