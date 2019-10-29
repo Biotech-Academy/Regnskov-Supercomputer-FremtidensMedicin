@@ -49,8 +49,9 @@ FEATURES             Location/Qualifiers
                      /gene="aldh1"
      CDS             1..1500
                      /gene="aldh1"
-                     /function="oxidizes sesquiterpene and short chain
-                     aldehydes"
+                     /function="Catalyzes the process where (+)-amorpha-4,11-diene 
+                     are converted into Artemisinic aldehylde and then
+                     again to Artemisinate"
                      /codon_start=1
                      /product="aldehyde dehydrogenase 1"
                      /protein_id="ACR61719.1"
