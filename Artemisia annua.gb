@@ -50,8 +50,8 @@ FEATURES             Location/Qualifiers
      CDS             1..1500
                      /gene="aldh1"
                      /function="Catalyzes the process where (+)-amorpha-4,11-diene 
-                     are converted into Artemisinic aldehylde and then
-                     again to Artemisinate"
+                     are converted into artemisinic aldehylde and then
+                     again to artemisinate"
                      /codon_start=1
                      /product="aldehyde dehydrogenase 1"
                      /protein_id="ACR61719.1"
@@ -450,6 +450,8 @@ FEATURES             Location/Qualifiers
                      /gene="CYP71AV1"
      CDS             383337..384042
                      /gene="CYP71AV1"
+                     /function="Catalyzes the process where artemisinic aldehylde
+                     are converted to dihydroarteminisic acids"
                      /codon_start=1
                      /product="cytochrome P450 monooxygenase CYP71AV1"
                      /protein_id="BAM68808.1"
