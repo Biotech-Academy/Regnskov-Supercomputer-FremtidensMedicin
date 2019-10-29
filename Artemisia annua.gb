@@ -445,9 +445,9 @@ FEATURES             Location/Qualifiers
                      /estimated_length=2207
                      /gap_type="within scaffold"
                      /linkage_evidence="paired-ends"
-     gene            complement(383337..384042)
+     gene            383337..384042
                      /gene="CYP71AV1"
-     CDS             complement(383337..384042)
+     CDS             383337..384042
                      /gene="CYP71AV1"
                      /codon_start=1
                      /product="cytochrome P450 monooxygenase CYP71AV1"
