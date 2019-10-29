@@ -22,6 +22,54 @@ import warnings
 from Bio import BiopythonParserWarning
 warnings.simplefilter('ignore', BiopythonParserWarning)
 
+def Information_fra_GenBank_fil(information):
+    record = SeqIO.read('Artemisia%20annua.gb', "genbank")
+    #print(record.annotations.keys())
+
+    seq_info = record.annotations['structured_comment']
+    for k, v in seq_info.items():
+      #print(v['Sequencing Technology'])
+        v['Sequencing Technology'] = 'PacBio & Illumina'
+        Coverage = v['Genome Coverage'] #180x er det meget eller lidt i dette tilfælde?
+        sekventerings_teknologi = v['Sequencing Technology']
+
+    if information == "organisme":
+        organisme = record.annotations['organism']
+        print(organisme)
+
+    #Hvilken slags data er det?
+    elif information == "molecule_type":
+        print(record.annotations['molecule_type'])
+
+    elif information == "Coverage":
+        print(Coverage)
+
+    elif information == "sekventerings_teknologi":
+        print(sekventerings_teknologi)
+
+    #Hvilken type sekventerings type er dataen lavet med?
+    elif information == "sekventerings_type":
+        print(record.annotations['keywords'])
+
+    #Hvad er taxonomyen?
+    elif information == "taxonomy":
+        print(record.annotations['taxonomy'])
+
+    #Print al information
+    elif information == "al_information":
+        print(record)
+
+    #Print DNA
+    elif information == "sekvens":
+        print('Totale antal nukleotider:',len(record.seq)) #record.seq[0:10000]
+        print('Antal ukendte nukleotider: 16158 \n')
+        print('Eksempel på sekvens der indeholder gap:')
+        print('TTGTTGATATGGAGTATTTATCCCTGTGTCNNNNNNNNNNNTACGGTTTGAAGACTCAGGAAACTCTCATTAAGCGATCAACGTAGCATGATCATCAAAAGCATGGTTTTGTAAAATCCAAGTATCCAAGCAATTGGTTCACCCTTTCAACATCCAAGTATCCAAGCAATTGGTTCACCCTTTCAACATCCAAGTATCCAAGCAATTGGTTCACCCTTTCAACATCCAAGTATCCAAGCAATTGGTTCACCCTTTCAACATCCAAGTATCCAAGCAATTGGTTCACCCTTTCAACCTCGNNNNNNNNNNNNNNNNNNN')
+
+    else:
+        print("Du har indtastet informations typen forkert. Prøv igen.")
+
+    return
 
 def display_yotube_video(url, **kwargs):
     id_ = url.split("=")[-1]
@@ -154,53 +202,6 @@ def Visualiser_sekvens(gen):
     return
 
 
-def Information_fra_GenBank_fil(information):
-    record = SeqIO.read('Artemisia%20annua.gb', "genbank")
-    #print(record.annotations.keys())
 
-    seq_info = record.annotations['structured_comment']
-    for k, v in seq_info.items():
-      #print(v['Sequencing Technology'])
-        v['Sequencing Technology'] = 'PacBio & Illumina'
-        Coverage = v['Genome Coverage'] #180x er det meget eller lidt i dette tilfælde?
-        sekventerings_teknologi = v['Sequencing Technology']
-
-    if information == "organisme":
-        organisme = record.annotations['organism']
-        print(organisme)
-
-    #Hvilken slags data er det?
-    elif information == "molecule_type":
-        print(record.annotations['molecule_type'])
-
-    elif information == "Coverage":
-        print(Coverage)
-
-    elif information == "sekventerings_teknologi":
-        print(sekventerings_teknologi)
-
-    #Hvilken type sekventerings type er dataen lavet med?
-    elif information == "sekventerings_type":
-        print(record.annotations['keywords'])
-
-    #Hvad er taxonomyen?
-    elif information == "taxonomy":
-        print(record.annotations['taxonomy'])
-
-    #Print al information
-    elif information == "al_information":
-        print(record)
-
-    #Print DNA
-    elif information == "sekvens":
-        print('Totale antal nukleotider:',len(record.seq)) #record.seq[0:10000]
-        print('Antal ukendte nukleotider: 16158 \n')
-        print('Eksempel på sekvens der indeholder gap:')
-        print('TTGTTGATATGGAGTATTTATCCCTGTGTCNNNNNNNNNNNTACGGTTTGAAGACTCAGGAAACTCTCATTAAGCGATCAACGTAGCATGATCATCAAAAGCATGGTTTTGTAAAATCCAAGTATCCAAGCAATTGGTTCACCCTTTCAACATCCAAGTATCCAAGCAATTGGTTCACCCTTTCAACATCCAAGTATCCAAGCAATTGGTTCACCCTTTCAACATCCAAGTATCCAAGCAATTGGTTCACCCTTTCAACATCCAAGTATCCAAGCAATTGGTTCACCCTTTCAACCTCGNNNNNNNNNNNNNNNNNNN')
-
-    else:
-        print("Du har indtastet informations typen forkert. Prøv igen.")
-
-    return
 
 
