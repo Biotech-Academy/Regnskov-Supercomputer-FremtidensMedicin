@@ -70,7 +70,7 @@ def KEGG(input1, input2):
         return print(result)
 
     # Display molekylær struktur for cpd:C00051 (vanillin)
-    elif input1 ==  "molekyle billede" and input2 != None::
+    elif input1 ==  "molekyle billede" and input2 != None:
         result = REST.kegg_get(input2, "image").read() #"cpd:C00755"
         return Image(result)
 
