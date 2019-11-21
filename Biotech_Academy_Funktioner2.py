@@ -21,8 +21,6 @@ from Bio.Graphics.KGML_vis import KGMLCanvas
 # Import Pandas, so we can use dataframes
 import pandas as pd
 
-
-
 # A bit of code that will help us display the PDF output
 def PDF(filename):
     return HTML('<iframe src=%s width=700 height=350></iframe>' % filename)
@@ -54,11 +52,6 @@ def KEGG(input1, input2):
               img = Image(result)
         return img
 
-    #Print hvilket som helst map 
-    #elif information.startswith("map") and molekyle != "alle":
-    #    result = REST.kegg_get(information, "image").read()
-    #    return Image(result)
-    
     #Find the compund vanillin
     elif input1 == "find_molekyle" and input2 != None: 
         result = REST.kegg_find("compound",input2).read() #cpd:C00755
@@ -77,5 +70,25 @@ def KEGG(input1, input2):
     elif input1 == "Enzyme molekyle" and input2 != None:
         result = REST.kegg_find("enzyme", input2).read()
         return to_df(result)
-    
 
+    #Enzym delen
+    from Bio.KEGG import Enzyme
+    request = REST.kegg_get(input1)
+    records = Enzyme.parse(request)  
+    record = list(records)[0]
+
+    if input2 == "reaction":
+        return record.reaction
+
+    elif input2 == "classname":
+        return record.classname
+
+    elif input2 == "genes":
+        genes = list()
+        for g in record.genes:
+            gene_id, gene_symbol = g
+            genes.append(gene_id)
+        return genes
+    else:
+        print("Du har indskrevet nogget der ikke er gældende. Prøv igen")
+    
