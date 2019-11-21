@@ -2,7 +2,7 @@
 # Funktionerne og materialet præsenteret er ikke akademisk korrekt, men er blevet ændret for undervisnings formål. 
 # ==============================================================================
 
-#Med inspiration fra
+#med inspiration fra
 #https://widdowquinn.github.io/2018-03-06-ibioic/02-sequence_databases/09-KEGG_programming.html
 
 # Show images inline
@@ -20,6 +20,8 @@ from Bio.Graphics.KGML_vis import KGMLCanvas
 
 # Import Pandas, so we can use dataframes
 import pandas as pd
+
+
 
 # A bit of code that will help us display the PDF output
 def PDF(filename):
