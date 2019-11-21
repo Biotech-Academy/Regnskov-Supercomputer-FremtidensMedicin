@@ -74,7 +74,7 @@ def KEGG(input1, input2):
         result = REST.kegg_get(input2, "image").read() #"cpd:C00755"
         return Image(result)
 
-    elif input1 == "Enzyme molekyle" and input2 != None::
+    elif input1 == "Enzyme molekyle" and input2 != None:
         result = REST.kegg_find("enzyme", input2).read()
         return to_df(result)
     
